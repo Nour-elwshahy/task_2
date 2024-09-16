@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      .form {
+        margin-bottom: 15px;
+      }
+      .form label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      .form input,
+      .form select,
+      .form textarea {
+        width: 100%;
+      }
+      .form input[type="radio"],
+      .form input[type="checkbox"] {
+        width: auto;
+      }
+      .form textarea {
+        height: 100px;
+      }
+      .form button {
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="Thankyou.htm" method="get">
+      <input type="hidden" name="userID" value="auto-generated-id" />
+
+      <div class="form">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required />
+      </div>
+
+      <div class="form">
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required />
+      </div>
+
+      <div class="form">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+      </div>
+
+      <div class="form">
+        <label for="repeatPassword">Repeat Password:</label>
+        <input
+          type="password"
+          id="repeatPassword"
+          name="repeatPassword"
+          required
+        />
+      </div>
+
+      <div class="form">
+        <label for="userPicture">User Picture:</label>
+        <input type="file" id="userPicture" name="userPicture" />
+      </div>
+
+      <div class="form">
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male" />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female" />
+        <label for="female">Female</label>
+      </div>
+
+      <div class="form">
+        <label for="faculty">Faculty:</label>
+        <select id="faculty" name="faculty">
+          <option value="science">Science</option>
+          <option value="arts">Arts</option>
+          <option value="engineering">Engineering</option>
+          <option value="medicine">Medicine</option>
+        </select>
+      </div>
+
+      <div class="form">
+        <label>Interests:</label>
+        <input
+          type="checkbox"
+          id="programming"
+          name="interests"
+          value="Programming"
+        />
+        <label for="programming">Programming</label>
+        <input type="checkbox" id="reading" name="interests" value="Reading" />
+        <label for="reading">Reading</label>
+        <input
+          type="checkbox"
+          id="swimming"
+          name="interests"
+          value="Swimming"
+        />
+        <label for="swimming">Swimming</label>
+      </div>
+
+      <div class="form">
+        <label for="aboutYou">About You:</label>
+        <textarea id="aboutYou" name="aboutYou"></textarea>
+      </div>
+
+      <div class="form">
+        <input type="checkbox" id="terms" name="terms" required />
+        <label for="terms">I agree to the terms and conditions</label>
+      </div>
+
+      <div class="form">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </body>
+</html>

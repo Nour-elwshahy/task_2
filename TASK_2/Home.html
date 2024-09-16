@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      nav {
+        text-align: center;
+        background-color: #333;
+      }
+      nav a {
+        color: rgb(248, 246, 246);
+        padding: 14px 20px;
+        text-decoration: none;
+        display: inline-block;
+      }
+      nav a:hover {
+        background-color: #575757;
+      }
+      .main {
+        flex: 1;
+        display: flex;
+      }
+      .column {
+        flex: 1;
+        padding: 1em;
+      }
+      header {
+        background-color: #ff90b9;
+        color: white;
+        padding: 1em;
+        text-align: center;
+      }
+      .login-box {
+        border: 1px solid rgb(226, 56, 127);
+        padding: 1em;
+        margin-bottom: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img
+        src="\images\vector-floral-logo-template-elegant-260nw-1693260655.webp"
+        alt="Website Logo"
+        style="max-width: 150px"
+      />
+    </header>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="contact.html" target="_blank">Contact Us</a>
+      <a href="about.html" target="_blank">About Us</a>
+    </nav>
+
+    <div class="main">
+      <div class="column" style="background-color: #575757">
+        <div class="login-box">
+          <h3>Login</h3>
+          <form action="#">
+            <p><label for="username">Username:</label></p>
+            <input type="text" id="username" name="username" />
+            <p><label for="password">Password:</label></p>
+            <input type="password" id="password" name="password" />
+            <p>
+              <button type="submit">
+                <img
+                  src="login-button.png"
+                  alt="Login"
+                  style="max-width: 100px"
+                />
+              </button>
+            </p>
+          </form>
+        </div>
+        <div>
+          <h3>My Pages Online</h3>
+          <a href="https://www.facebook.com" target="_blank">Facebook</a>
+          <a href="https://www.twitter.com" target="_blank">Twitter</a>
+
+          <iframe
+            src="https://www.youtube.com/watch?v=6HZXfrDai0o"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+
+      <div class="column" style="background-color: #e4cad5">
+        <h3>My Profile</h3>
+        <div class="profile-info">
+          <p>Name: Nour Elwshahy</p>
+          <p>Age: 20</p>
+          <p>Address: 123 t, Hometown</p>
+          <p>Phones: 555-188498</p>
+          <p>
+            Faculty:cs
+            <a href="https://www.example.edu" target="_blank"> Faculty</a>
+          </p>
+          <p>Hobbies:</p>
+          <ul>
+            <li>baking</li>
+            <li>Traveling</li>
+            <li>Photography</li>
+          </ul>
+          <p>
+            Mail:
+            <a href="nourAhhmed@example.com">nourr.doe@example.com</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="column" style="background-color: #575757">
+        <img
+          src="images\200w.gif"
+          alt="Personal Photo"
+          style="max-width: 100%"
+        />
+        <h3>News</h3>
+        <p>Stay tuned !</p>
+      </div>
+    </div>
+  </body>
+</html>
